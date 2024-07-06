@@ -257,9 +257,8 @@ footer {
     }
 
     .home {
-        padding: 6.25em 4em;
-        flex-direction: column;
         text-align: center;
+        aline-items:center;
     }
 
     .home div {
@@ -313,6 +312,10 @@ footer {
         padding: 10px 20px;
     }
 
+    .home{
+        padding: 6.25em 8em;
+    }
+    
     .navg a {
         font-size: 0.8em;
         padding-left: 10px;
