@@ -170,7 +170,6 @@ section {
     background-color: #734E38;
     min-height: 320px;
     display: flex;
-    justify-content: center;
     flex-direction: row;
 }
 
