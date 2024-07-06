@@ -1,49 +1,205 @@
-/* Reset default margin and padding */
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    scroll-behavior: smooth;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    width: 100%;
+    background-color: #F1EAE2;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
 }
 
-header h1 {
-    margin: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+.logo {
+    display: inline-block;
     text-decoration: none;
+    color: #734E38;
+    font-weight: 800;
+    font-size: 1.8em;
+    transition: 0.7s ease;
 }
 
-.section {
-    padding: 40px 0;
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.navg a {
+    color: #734E38;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.navg a:hover {
+    color: #F2B76C;
+}
+
+section {
+    padding: 6.25em 4.5em;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 6.25em 12.5em;
+    background: url('images/2-0.jpg') no-repeat;
+    background-size: cover;
+}
+
+.home div {
+    margin: 0px 10px;
+}
+
+.home h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.home h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #F2B76C;
+    font-size: 3em;
+    font-weight: 700;
+    transition: 0.7s ease;
+}
+
+.home h2 span:hover {
+    transform: scale(1);
+}
+
+.home h3 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.home h3 span {
+    color: #4AE333;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #08428C;
+    color: #F1EAE2;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.btn:hover {
+    background-color: #001eb3;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.1);
+}
+
+.social a {
+    display: inline-block;
+    color: #f1a23b;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+}
+
+.social .w:hover {
+    color: #25d366;
+    transform: scale(1.4);
+}
+
+.social .f:hover {
+    color: #1877f2;
+    transform: scale(1.4);
+}
+
+.social .i:hover {
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.4);
+}
+
+.social .b:hover {
+    color: #1769ff;
+    transform: scale(1.4);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #F2B76C;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #734E38;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card .img img {
+    height: 300px;
+    margin: 10px 10px;
+}
+
+.card .content {
+    color: #F1EAE2;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.content h3 {
+    font-size: 1.5em;
+}
+
+#b {
+    background-color: #F1EAE2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#b .content {
+    color: #734E38;
+}
+
+.contact {
     text-align: center;
 }
 
@@ -64,12 +220,129 @@ form button {
 }
 
 form button {
-    background-color: #333;
+    background-color: #734E38;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #555;
-  }
+    background-color: #83390e;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+}
+
+/* استعلامات الوسائط */
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 100px;
+    }
+
+    .home {
+        padding: 6.25em 8em;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 10px 50px;
+    }
+
+    .home {
+        padding: 6.25em 4em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home div {
+        margin: 10px 0;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navg a {
+        font-size: 0.9em;
+        padding-left: 20px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 0.75em 1.75em;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card .content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .navg a {
+        font-size: 0.8em;
+        padding-left: 10px;
+    }
+
+    section {
+        padding: 3em 1.5em;
+    }
+
+    .home h2 {
+        font-size: 1.2em;
+    }
+
+    .home h2 span {
+        font-size: 2.5em;
+    }
+
+    .home h3 {
+        font-size: 1.5em;
+    }
+
+    .home h3 span {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 0.6em 1.5em;
+    }
+
+    .social a {
+        font-size: 1.2em;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+}
+
