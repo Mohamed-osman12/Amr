@@ -28,8 +28,12 @@ header {
     transition: 0.7s ease;
 }
 
-.logo:hover {
+
+.logo:hover{
     transform: scale(1.2);
+    span::after{
+        content: ' Abd Almageed';
+    }
 }
 
 .navg a {
@@ -322,6 +326,10 @@ footer {
         font-size: 1.2em;
     }
 
+
+    .logo:hover{
+        transform: scale(1.2);
+    }
     .home h2 span {
         font-size: 2.5em;
     }
