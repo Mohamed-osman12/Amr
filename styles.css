@@ -288,10 +288,19 @@ footer {
     .card .img img {
         width: 100%;
         height: auto;
+        margin :0;
     }
-
+    .card , #b {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0em ;
+    }
     .card .content {
-        padding: 20px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 }
 
@@ -332,20 +341,27 @@ footer {
 
     .social a {
         font-size: 1.2em;
-        padding-right: 20px;
+        padding: 0px 10px;
     }
 
     .title {
         font-size: 1.5em;
     }
-
-    .card {
+    .card .img img {
+        width: 100%;
+        height: auto;
+        margin :0;
+    }
+    .card , #b {
         flex-direction: column;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        align-items: center;
+        padding: 0em ;
     }
-
+    .card .content {
+        padding: 5px 5px;
+    }
     .contact form {
         padding: 20px;
     }
