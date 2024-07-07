@@ -426,6 +426,13 @@ footer {
 }
 
 @media (max-width:350px){
+    .navg .h{
+        font-size: 0em;
+        padding: 0em ;
+    }
+    .navg .p{
+        padding: 0em;
+    }
     .be iframe{
         width: 100%;
         height: auto;
