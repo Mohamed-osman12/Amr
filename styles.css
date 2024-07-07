@@ -122,6 +122,12 @@ section {
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
+    padding:0px 5px;
+}
+
+.be iframe{
+    max-height:316px;
+    max-width:404px;
 }
 
 .home h3 span {
@@ -419,3 +425,19 @@ footer {
     }
 }
 
+@media (max-width:350px){
+    .be iframe{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (max-width:210px){
+    .content h3{
+        font-size: 1em;
+    }
+    .content p{
+        font-size: 0.8em;
+    }
+}
